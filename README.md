@@ -2,7 +2,19 @@
 
 Man's best friend in a terminal near you!
 
-TODO:
+## Installation
+
+```shell
+npm install
+```
+
+## Running the application
+
+```shell
+npm start
+```
+
+## TODO:
 
 * Fix the critical bug which makes the application not run
 
