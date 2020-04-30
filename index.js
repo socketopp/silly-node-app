@@ -1,8 +1,10 @@
 const agent = require('superagent');
 const asciify = require('asciify-image');
 
+const DOG_API = 'https://dog.ceo/api/breeds/image/random';
+
 const getDogImageURL = async () => {
-  const { body: { message: dogUrl }} = await agent.get('https://dog.ceo/api/breeds/image/random');
+  const { body: { message: dogUrl }} = await agent.get(DOG_API_URL);
   return dogUrl;
 };
 
