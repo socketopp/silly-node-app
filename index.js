@@ -11,12 +11,9 @@ const getDogImageURL = async () => {
 (async () => {
   // Get a URL for a random image of a dog
   const dogUrl = await getDogImageURL();
-
-  // Download the image
-  const { body: data } = await agent.get(dogUrl);
-
+  
   // Convert the image to ascii
-  const ascii = await asciify(data, {
+  const ascii = await asciify(dogUrl, {
     fit: 'box',
     width: 60,
     height: 60,
